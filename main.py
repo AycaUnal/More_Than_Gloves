@@ -41,7 +41,7 @@ st.markdown("""
 st.divider()
 
 ############ PYTHON #################################
-df_ = pd.read_csv("archive/data.csv", sep=',')
+df_ = pd.read_csv("data.csv", sep=',')
 df = df_.copy()
 
 ######################################################
