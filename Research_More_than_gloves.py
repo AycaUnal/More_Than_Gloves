@@ -9,6 +9,7 @@ import numpy as np
 import seaborn as sns
 from matplotlib import pyplot as plt
 import joblib
+from sklearn.neighbors import KNeighborsClassifier
 from sklearn.metrics import accuracy_score
 from sklearn.preprocessing import LabelEncoder, StandardScaler
 from sklearn.ensemble import RandomForestClassifier
