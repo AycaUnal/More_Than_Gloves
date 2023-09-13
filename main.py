@@ -21,6 +21,7 @@ st.set_page_config(
     page_icon=":gloves:",
     layout="wide",
     initial_sidebar_state="expanded",
+    dark_mode = True
     menu_items={
         'Get Help': 'https://www.extremelycoolapp.com/help',
         'Report a bug': "https://www.extremelycoolapp.com/bug",
