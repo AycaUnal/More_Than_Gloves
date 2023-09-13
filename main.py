@@ -1,8 +1,8 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-from streamlit_lottie import st_lottie
-from streamlit_lottie import st_lottie_spinner
+#from streamlit_lottie import st_lottie
+#from streamlit_lottie import st_lottie_spinner
 import time
 import requests
 from PIL import Image
@@ -209,8 +209,9 @@ with col1:
     if st.button('Maçı Başlat'):
         nested_col1, nested_col2, nested_col3 = st.columns([1, 2, 0.35])
         with nested_col1:
-            lottie_url2 = "https://assets-v2.lottiefiles.com/a/890cb942-1177-11ee-847c-73f9b2630e61/wskZOKAm5E.json"
-            st_lottie(lottie_url2, width=100, height=100)
+            st.write(" ")
+            #lottie_url2 = "https://assets-v2.lottiefiles.com/a/890cb942-1177-11ee-847c-73f9b2630e61/wskZOKAm5E.json"
+            #st_lottie(lottie_url2, width=100, height=100)
 
 
 
@@ -240,8 +241,9 @@ with col1:
             selected_fight_data = df_[(df_['R_fighter'] == red_fighter) & (df_['B_fighter'] == blue_fighter)]
 
         with nested_col3:
-            lottie_url2 = "https://assets-v2.lottiefiles.com/a/890cb942-1177-11ee-847c-73f9b2630e61/wskZOKAm5E.json"
-            st_lottie(lottie_url2, width=100, height=100)
+             st.write(" ")
+            #lottie_url2 = "https://assets-v2.lottiefiles.com/a/890cb942-1177-11ee-847c-73f9b2630e61/wskZOKAm5E.json"
+            #st_lottie(lottie_url2, width=100, height=100)
 
 with col2:
     st.button('Yeni Bir Maç Seç')
