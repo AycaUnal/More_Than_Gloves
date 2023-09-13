@@ -279,33 +279,6 @@ with col4:
 
 ########### Analizler VE Grafikler###################
 #şimdilik rastgele
-chart_data = pd.DataFrame(
-    np.random.randn(20, 3),
-    columns = ['a', 'b', 'c'])
-
-st.area_chart(chart_data)
-st.divider()
-df3 = pd.DataFrame({
-    "col1": np.random.randn(1000) / 50 + 37.76,
-    "col2": np.random.randn(1000) / 50 + -122.4,
-    "col3": np.random.randn(1000) * 100,
-    "col4": np.random.rand(1000, 4).tolist(),
-})
-
-st.map(df3,
-    latitude='col1',
-    longitude='col2',
-    size='col3',
-    color='col4')
-
-st.divider()
-
-chart_data = pd.DataFrame(
-    np.random.randn(20, 3),
-    columns=["a", "b", "c"])
-
-st.bar_chart(chart_data)
-
 
 with st.sidebar:
     on = st.toggle('Takım:sunglasses:')
